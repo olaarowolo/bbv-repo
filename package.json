@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^5.0.0",
+    "mongoose": "^8.6.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.15",
+    "square-connect": "^6.20201216.0"
+  },
+  "name": "beautybyvickky-website",
+  "version": "1.0.0",
+  "description": "<p>It is a free HTML CSS template by <a href=\"https://templatesjungle.com/\" target=\"_blank\">TemplatesJungle.com</a></p> <p>You can use this template as a starter template and start building as you require.</p>",
+  "main": "payment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
