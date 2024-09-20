@@ -1,59 +1,71 @@
-<p>It is a free HTML CSS template by <a href="https://templatesjungle.com/" target="_blank">TemplatesJungle.com</a></p>
-<p>You can use this template as a starter template and start building as you require.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty by Vickky Lounge - Website Readme</title>
+</head>
+<body>
+  <h1>Beauty by Vickky Lounge - Website Readme</h1>
 
-<p>The code is consistent and can be easily maintained as we have followed a good coding standards. We want everyone to easily understand it and modify it according to their requirement. As the main goal of providing these templates is to give you something to work on before even starting.</p>
+  <h2>Project Description</h2>
+  <p>This website serves as an online platform for Beauty by Vickky Lounge, a permanent makeup and eyelash extension services provider. It offers information about the available services, including microblading, microshading, ombre brows, and combination brows, as well as eyelash extensions.</p>
 
-<h2>FREE FOR BOTH PERSONAL AND COMMERCIAL USE</h2>
+  <h2>Key Features</h2>
+  <ul>
+    <li>Service Descriptions: Detailed explanations of each permanent makeup technique.</li>
+    <li>Contact Information: Provides ways for potential clients to reach out and book appointments.</li>
+    <li>Free Template by TemplatesJungle.com: This website is built using a free HTML and CSS template provided by <a href="https://templatesjungle.com/">TemplatesJungle.com</a>.</li>
+  </ul>
 
-<p>This HTML Template is provided by TemplatesJungle.com and is free to use in both personal and commercial projects as long as you don't remove our credit link in the footer.</p>
+  <h2>Target Audience</h2>
+  <p>Individuals interested in enhancing their eyebrows or lashes through permanent makeup or eyelash extensions.</p>
 
-<p>However, you can remove the credit link by paying for No Attribution version of the template.</p>
+  <h2>Getting Started</h2>
+  <ol>
+    <li>Visit the Website: Access the website at <a href="https://beautybyvickkylounge.com/">https://beautybyvickkylounge.com/</a>.</li>
+    <li>Explore Services: Browse through the information about different permanent makeup techniques and eyelash extensions.</li>
+    <li>Contact for Booking: Use the provided contact information to schedule an appointment or inquire about pricing.</li>
+  </ol>
 
-<h2>RIGHTS</h2>
+  <h2>Template Usage</h2>
+  <p>It is a free HTML CSS template by TemplatesJungle.com.</p>
+  <ul>
+    <li>You can use this template as a starter template and modify it according to your requirement.</li>
+    <li>The code is consistent and can be easily maintained.</li>
+  </ul>
 
-<p>You are allowed to use it in your personal projects and commercial projects.</p>
+  <h2>Template License (Free Version)</h2>
+  <p>FREE FOR BOTH PERSONAL AND COMMERCIAL USE.</p>
+  <p>You can use it in your personal and commercial projects as long as you don't remove the TemplatesJungle.com credit link in the footer.</p>
 
-<p>You can modify and sell it to your clients.</p>
+  <h2>Template Rights (Free Version)</h2>
+  <ul>
+    <li>You are allowed to use it in your personal and commercial projects.</li>
+    <li>You can modify and sell it to your clients.</li>
+  </ul>
 
-<h2>PROHIBITIONS</h2>
+  <h2>Template Prohibitions (Free Version)</h2>
+  <ul>
+    <li>You cannot remove the credit link.</li>
+    <li>You cannot resell or redistribute the template (paid or free) as it is.</li>
+    <li>You cannot use it to build premium templates, themes, or any other goods to be sold on marketplaces.</li>
+    <li>If you want to share the free resource, you must point it to the original TemplatesJungle.com resource page. </li>
+    <li>You cannot host the download file on your website.</li>
+  </ul>
 
-<p>You cannot remove the credit link which links back to templatesjungle.com.</p>
+  <h2>Template Support (Free Version)</h2>
+  <p>You can contact TemplatesJungle.com to report any bugs and errors, and they will try to fix them.</p>
+  <p>Feel free to let them know about what you want to see in future free templates.</p>
 
-<p>You are not permitted to resell or redistribute (paid or free) as it is. </p>
-
-<p>You cannot use it to build premium templates, themes or any other goods to be sold on marketplaces.</p>
-
-<p>If you want to share the free resource in your blog, you must point it to original TemplatesJungle.com resource page. </p>
-
-<p>You cannot host the download file in your website.</p>
-
-<h2>SUPPORT</h2>
-
-<p>You can contact us to report any bugs and errors in the template. We will try and fix them immediately although it's a free resource.</p>
-
-<p>Feel free to let us know about what you want to see in the future downloads. We will definitely give it a thought while creating our next freebie.</p>
-
-<h2>CREDITS & REFERENCES<h2>
-
-<p><a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></p>
-
-<h3>Stock Photos</h3>
-<p><a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a></p>
-<p><a href="https://www.freepik.com/" target="_blank">https://www.freepik.com/</a></p>
-<p><a href="https://www.pexels.com/" target="_blank">https://www.pexels.com/</a></p>
-
-<h3>Fonts</h3>
-<p>Google fonts</p>
-<p><a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></p>
-
-<h3>Icons</h3>
-<p><a href="https://icomoon.io/" target="_blank">https://icomoon.io/</a></p>
-
-<h3>JQuery Plugins</h3>
-
-<p>Swiper Slider - <a href="https://swiperjs.com/" target="_blank">https://swiperjs.com/</a></p>
-<p>Slick Slider - <a href="https://kenwheeler.github.io/slick/" target="_blank">https://kenwheeler.github.io/slick/</a></p>
-<p>Chocolat.js – a Free Lightbox Plugin -<a href="http://chocolat.insipi.de/" target="_blank">http://chocolat.insipi.de/</a></p>
-<p>Magnific Lightbox - <a href="https://github.com/dimsemenov/Magnific-Popup" target="_blank">https://github.com/dimsemenov/Magnific-Popup</a></p>
-
-<p>Thanks for downloading from TemplatesJungle.com !</p>
+  <h2>Credits & References</h2>
+  <ul>
+    <li>Bootstrap: <a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
+    <li>Stock Photos:</li>
+      <ul>
+        <li>Unsplash: <a href="https://unsplash.com/">https://unsplash.com/</a></li>
+        <li>Freepik: <a href="https://www.freepik.com/">https://www.freepik.com/</a></li>
+        <li>Pexels: <a href="https://www.pexels.com/">https://www.pexels.com/</a></li>
+      </ul>
+    <li>Fonts: Google Fonts: <a href="https://fonts.google.com/">https://fonts.google.com/</a></li>
+    <li>Icons: IcoMoon: <a href="https://icomoon.io/">https://icomoon.io/</
