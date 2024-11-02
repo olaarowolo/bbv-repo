@@ -627,7 +627,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 
 .display-3 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .color-change {
@@ -656,4 +656,113 @@ body.nav-active .nav__list-item:nth-child(10) {
   100% {
     color: purple;
   }
+}
+
+
+.homepage {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url("img/bgimg.png");
+  background-position: center 65%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.homepage::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.homepage .content {
+  display: flex;
+  height: 85%;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homepage .content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.homepage .content .text {
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+.homepage .content .para{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#EB009F;
+}
+
+.homepage .content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.homepage .content .text {
+  font-size: 17px;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+  .homepage {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url("images/home-img.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+  }
+  
+}
+
+.content a {
+  color: #000;
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: #fff;
+  border: 2px solid #fff;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.3);
+}
+
+
+.content a {
+  font-size: 17px;
+  padding: 9px 20px;
+}
+
+.homepage {
+  background-image: url('images/home-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Ensures the text is readable over the background */
+  padding: 2rem; /* Adjust padding as needed for spacing */
 }

@@ -165,8 +165,10 @@
 							class="display-3">Home</span></a></li>
 				<li class="nav__list-item active-nav"><a href="/about-us.html" class="hover-target"><span
 							class="display-3">About us</span></a></li>
-				<li class="nav__list-item active-nav"><a href="/pmubrows.html" class="hover-target"><span
+				<li class="nav__list-item active-nav"><a href="/brows.html" class="hover-target"><span
 							class="display-3">Brows</span></a></li>
+				<li class="nav__list-item active-nav"><a href="/brows-touch-up.html" class="hover-target"><span
+							class="display-3">Brows Touch-up</span></a></li>
 				<li class="nav__list-item active-nav"><a href="/hairshop.html" class="hover-target"><span
 							class="display-3">Hair Shop</span></a></li>
 				<li class="nav__list-item active-nav"><a href="/eyelashes.html" class="hover-target"><span
@@ -181,8 +183,8 @@
 							class="display-3">Reviews</span></a></li>
 				<li class="nav__list-item active-nav"><a href="/policy.html" class="hover-target"><span
 							class="display-3">Policy</span></a></li>
-				<li class="nav__list-item active-nav"><a href="/faqs.html" class="hover-target"><span
-							class="display-3">FAQs</span></a></li>
+				<li class="nav__list-item active-nav"><a href="/sitemap.html" class="hover-target"><span
+							class="display-3">Sitemap</span></a></li>
 			</ul>
 		</div>
 		<script>
@@ -204,39 +206,36 @@
 			</label>
 		</nav>
 	</header>
-	<section id="home" class="py-1 my-1 py-md-5 my-md-5"">
-		<div class=" container">
-		<div class="text-center ">
-			<div class="text-content mt-5" data-aos="fade-in">
-				<h1 class="display-1 text-uppercase">Enhancing <br> Natural Beauty</h1>
-				<!-- <a href="#welcome" class="btn btn-dark px-5 py-3">Read more</a> -->
+	<section class="homepage" id="home">
+		<div class="content">
+			<div class="text">
+				<div class="text-content mt-5 text-center" data-aos="fade-in">
+					<h1 class="display-1 text-uppercase" style="color: white;">Enhancing <br> Natural Beauty</h1>
+					<!-- <a href="#welcome" class="btn btn-dark px-5 py-3">Read more</a> -->
+				</div>
 			</div>
-		</div>
+			<a href="/services.html" target="_blank">Our Services</a>
 		</div>
 	</section>
 	<section id="home" class="py-1 my-1 py-md-1 my-md-5"">
-		<div class=" container justify-content-center align-items-center">
-		<div class="col-md-4">
-		</div>
-		<div class="text-center">
-			<div>
+		<section id="home" class="py-1 my-1 py-md-1 my-md-5">
+			<div class=" container justify-content-center align-items-center">
+				<div class="col-md-4">
+				</div>
 				<div class="text-center">
 					<div>
 						<figure class="text-center">
-							<img src="images/eb-img0.jpeg" class="img-fluid" alt="photographer"
-								style="max-width: 50%; height: auto;">
+							<!-- <img src="images/eb-img0.jpeg" class="img-fluid" alt="photographer"
+								style="max-width: 50%; height: auto;"> -->
 							<!-- Book Now Button -->
 							<div class="">
 								<h2 class="display-1 text-uppercase">Brows</h2>
 								<p> Unleash Your Inner Beauty
-									Step into our world of beauty and let us pamper you with our exceptional services.
-								</p>
+									Step into our world of beauty and let us pamper you with our exceptional services.</p>
 								<!-- <a href="https://beautybyvickkylounge.com/services.html" target="_blank"
 								class="btn btn-dark px-5 py-3">Book Now</a> -->
-
 							</div>
 						</figure>
-
 						<section id="brows">
 							<!-- Start of New Product Card -->
 							<div class="container" data-aos="fade-in">
@@ -255,45 +254,36 @@
 												<h3 class="product-title">Combination Brows</h3>
 												<p class="price">£250</p>
 												<div class="service-price">
-													<p class="deposit-text"> £50 deposit required at booking, remaining
-														£200
-														due
-														on
-														the day of service</p>
+													<p class="deposit-text">£50 deposit required at booking, remaining £200
+														due on the day of service</p>
 												</div>
-												<p class="policy-text-small">By clicking the 'book now' button you have
-													accepted
-													<a href="https://beautybyvickkylounge.com/policy.html">our booking
-														policy</a>.
-													Ensure you have read before proceeding.</p>
-
-												<button class=" pay-deposit"
-													onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/comb-brows-clone' }); return false;"
-													class=""> Book Now </button>
+												<p class="policy-text-small">
+													By clicking the 'book now' button you have accepted
+													<span class="single-card-link" href="https://beautybyvickkylounge.com/policy.html">our booking
+													policy</span>.  Ensure you have read before proceeding.
+												</p>
+												<!-- Checkbox for consent -->
+												<label>
+													<input type="checkbox" id="termsCheckbox1">
+													I agree to the terms and conditions
+												</label>
+												<!-- Book Now button -->
+												<button id="bookButton1" class="pay-deposit">Book Now</button>
 											</div>
 										</div>
-
-										<!-- Pop-up Modal -->
+										<!-- Modal for Combination Brows -->
 										<div class="modal" id="detailsModal-1">
 											<div class="modal-content">
 												<span class="close">&times;</span>
 												<div class="details-text">
 													<p>Combination brows are a technique that combines microblading and
-														shading
-														to
-														create natural and defined eyebrows...</p>
+														shading to create natural and defined eyebrows.</p>
 												</div>
 												<div class="service-price">
 													<p><strong>Full Service Charge:</strong> £250</p>
-													<p><b>£50 deposit required at booking, remaining £200 due on the day
-															of
+													<p><b>£50 deposit required at booking, remaining £200 due on the day of
 															service</b></p>
 												</div>
-												<button class="pay-deposit"
-													onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/comb-brows-clone' }); return false;"
-													class="" type="button">Book A Combination Brow Session by Paying
-													Deposit
-													Now</button>
 											</div>
 										</div>
 									</div>
@@ -311,55 +301,36 @@
 												<h3 class="product-title">Ombré Brows</h3>
 												<p class="price">£200</p>
 												<div class="service-price">
-													<p class="deposit-text"> £50 deposit required at booking, remaining
-														£240
-														due
-														on
-														the day of service</p>
+													<p class="deposit-text">£50 deposit required at booking, remaining £150
+														due on the day of service</p>
 												</div>
-												<p class="policy-text-small">By clicking the 'book now' button you have
-													accepted
-													<a href="https://beautybyvickkylounge.com/policy.html">our booking
-														policy</a>.
-													Ensure you have read before proceeding.</p>
-												<button class="pay-deposit"
-													onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/ombre-eyelashes' }); return false;"
-													class="bk-btn" type="button"> Book Now </button>
+												<p class="policy-text-small">
+													By clicking the 'book now' button you have accepted
+													<span class="single-card-link" href="https://beautybyvickkylounge.com/policy.html">our booking
+													policy</span>.  Ensure you have read before proceeding.
+												</p>
+												<!-- Checkbox for consent -->
+												<label>
+													<input type="checkbox" id="termsCheckbox2">
+													I agree to the terms and conditions
+												</label>
+												<!-- Book Now button -->
+												<button id="bookButton2" class="pay-deposit">Book Now</button>
 											</div>
 										</div>
-										<!-- Pop-up Modal -->
+										<!-- Modal for Ombré Brows -->
 										<div class="modal" id="detailsModal-2">
 											<div class="modal-content">
 												<span class="close">&times;</span>
 												<div class="details-text">
-													<p>Ombre Brows create stunning and defined eyebrows with a soft
-														gradient
-														effect. This technique deposits pigment in a gradient pattern,
-														starting
-														with
-														a lighter shade at the front and gradually deepening towards the
-														tail.
-														Customize the intensity and shape for a natural or bold look.
-														Wake
-														up
-														with
-														effortlessly chic brows and say goodbye to daily makeup
-														routines.
-														Book
-														your
-														appointment today for flawlessly defined brows that last </p>
-													</p>
+													<p>Ombre Brows create stunning and defined eyebrows with a soft gradient
+														effect...</p>
 												</div>
 												<div class="service-price">
 													<p><strong>Full Service Charge:</strong> £200</p>
-													<p><b>£50 deposit required at booking, remaining £150 due on the day
-															of
+													<p><b>£50 deposit required at booking, remaining £150 due on the day of
 															service</b></p>
 												</div>
-												<button class="pay-deposit"
-													onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/ombre-eyelashes' }); return false;"
-													class="bk-btn" type="button">Book A Session by Paying Deposit
-													Now</button>
 											</div>
 										</div>
 									</div>
@@ -377,57 +348,36 @@
 												<h3 class="product-title">Microblading Brows</h3>
 												<p class="price">£220</p>
 												<div class="service-price">
-													<p class="deposit-text"> £50 deposit required at booking, remaining
-														£170
-														due
-														on
-														the day of service</p>
+													<p class="deposit-text">£50 deposit required at booking, remaining £170
+														due on the day of service</p>
 												</div>
-												<p class="policy-text-small">By clicking the 'book now' button you have
-													accepted
-													<a href="https://beautybyvickkylounge.com/policy.html">our booking
-														policy</a>.
-													Ensure you have read before proceeding.</p>
-												<button class="pay-deposit"
-													onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/microblading' }); return false;"
-													class="bk-btn" type="button"> Book Now </button>
+												<p class="policy-text-small">
+													By clicking the 'book now' button you have accepted
+													<span class="single-card-link" href="https://beautybyvickkylounge.com/policy.html">our booking
+													policy</span>.  Ensure you have read before proceeding.
+												</p>
+												<!-- Checkbox for consent -->
+												<label>
+													<input type="checkbox" id="termsCheckbox3">
+													I agree to the terms and conditions
+												</label>
+												<!-- Book Now button -->
+												<button id="bookButton3" class="pay-deposit">Book Now</button>
 											</div>
 										</div>
-										<!-- Pop-up Modal -->
+										<!-- Modal for Microblading Brows -->
 										<div class="modal" id="detailsModal-3">
 											<div class="modal-content">
 												<span class="close">&times;</span>
 												<div class="details-text">
 													<p>Microblading is a technique used to enhance eyebrows by creating
-														realistic
-														hair-like strokes. It involves depositing pigment into the skin
-														to
-														achieve
-														fuller and more defined eyebrows. The results are
-														natural-looking
-														and
-														customized to each individual's desired shape. Unlike
-														traditional
-														tattoos,
-														microblading fades over time and requires touch-ups every 1-2
-														years.
-														It
-														is
-														ideal for those with thin or uneven eyebrows, providing instant
-														results
-														and
-														boosting confidence. </p>
+														realistic hair-like strokes...</p>
 												</div>
 												<div class="service-price">
 													<p><strong>Full Service Charge:</strong> £220</p>
-													<p><b>£50 deposit required at booking, remaining £170 due on the day
-															of
+													<p><b>£50 deposit required at booking, remaining £170 due on the day of
 															service</b></p>
 												</div>
-												<button class="pay-deposit"
-													onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/microblading' }); return false;"
-													class="bk-btn" type="button">Book A Session by Paying Deposit
-													Now</button>
 											</div>
 										</div>
 									</div>
@@ -445,101 +395,138 @@
 												<h3 class="product-title">Microshading Brows</h3>
 												<p class="price">£180</p>
 												<div class="service-price">
-													<p class="deposit-text"> £50 deposit required at booking, remaining
-														£130
-														due
-														on
-														the day of service</p>
+													<p class="deposit-text">£50 deposit required at booking, remaining £130
+														due on the day of service</p>
 												</div>
-												<p class="policy-text-small">By clicking the 'book now' button you have
-													accepted
-													<a href="https://beautybyvickkylounge.com/policy.html">our booking
-														policy</a>.
-													Ensure you have read before proceeding.</p>
-												<button class="pay-deposit"
-													onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/microshading' }); return false;"
-													class="bk-btn" type="button"> Book Now </button>
+												<p class="policy-text-small">
+													By clicking the 'book now' button you have accepted
+													<span class="single-card-link" href="https://beautybyvickkylounge.com/policy.html">our booking
+													policy</span>.  Ensure you have read before proceeding.
+												</p>
+												<!-- Checkbox for consent -->
+												<label>
+													<input type="checkbox" id="termsCheckbox4">
+													I agree to the terms and conditions
+												</label>
+												<!-- Book Now button -->
+												<button id="bookButton4" class="pay-deposit">Book Now</button>
 											</div>
 										</div>
-										<!-- Pop-up Modal -->
+										<!-- Modal for Microshading Brows -->
 										<div class="modal" id="detailsModal-4">
 											<div class="modal-content">
 												<span class="close">&times;</span>
 												<div class="details-text">
-													<p>Microshading is a technique to enhance the appearance of eyebrows
-														by
-														creating
-														a
-														soft and natural-looking powdered effect. It involves using a
-														handheld
-														tool
-														with
-														fine needles to deposit pigment into the skin, resulting in
-														filled-in
-														brows.
-														This method is suitable for those with sparse or uneven eyebrow
-														hair,
-														giving
-														them a more defined and polished look. Microshading is a
-														combination
-														of
-														strokes
-														from the beginning to the end and a light shading on the body of
-														the
-														brows.
-													</p>
+													<p>Microshading is a technique to enhance the appearance of eyebrows by
+														creating a soft and natural-looking powdered effect...</p>
 												</div>
 												<div class="service-price">
 													<p><strong>Full Service Charge:</strong> £180</p>
-													<p><b>£60 deposit required at booking, remaining £130 due on the day
-															of
+													<p><b>£50 deposit required at booking, remaining £130 due on the day of
 															service</b></p>
 												</div>
-												<button class="pay-deposit"
-													onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/microshading' }); return false;"
-													class="bk-btn" type="button">Book A Session by Paying Deposit
-													Now</button>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- End of Product Card -->
+							<!-- Modal Script -->
+							<script>
+								// Function to handle modal open and close
+								function handleModal(modalId) {
+									const modal = document.getElementById(modalId);
+									const closeButton = modal.querySelector('.close');
+									// Open modal
+									document.querySelector(`button[data-modal="${modalId}"]`).addEventListener('click', () => {
+										modal.style.display = 'block';
+									});
+									// Close modal
+									closeButton.addEventListener('click', () => {
+										modal.style.display = 'none';
+									});
+									// Close modal when clicking outside of modal content
+									window.addEventListener('click', (event) => {
+										if (event.target === modal) {
+											modal.style.display = 'none';
+										}
+									});
+								}
+								// Initialize modals
+								handleModal('detailsModal-1');
+								handleModal('detailsModal-2');
+								handleModal('detailsModal-3');
+								handleModal('detailsModal-4');
+								// Add functionality for Book Now buttons
+								function setupBookingButtons(checkboxId, buttonId, calendlyUrl) {
+									const checkbox = document.getElementById(checkboxId);
+									const button = document.getElementById(buttonId);
+									const bookNow = () => {
+										if (checkbox.checked) {
+											Calendly.initPopupWidget({
+												url: calendlyUrl
+											});
+										} else {
+											alert('Please accept the terms and conditions before continuing.');
+										}
+									};
+									button.addEventListener('click', bookNow);
+								}
+								// Set up for each product
+								setupBookingButtons('termsCheckbox1', 'bookButton1', 'https://calendly.com/beautybyvickky/comb-brows-clone');
+								setupBookingButtons('termsCheckbox2', 'bookButton2', 'https://calendly.com/beautybyvickky/ombre-eyelashes');
+								setupBookingButtons('termsCheckbox3', 'bookButton3', 'https://calendly.com/beautybyvickky/microblading');
+								setupBookingButtons('termsCheckbox4', 'bookButton4', 'https://calendly.com/beautybyvickky/microshading');
+							</script>
+							<!-- Calendly link widget begin -->
+							<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+							<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+								async></script>
+							<!-- Calendly link widget end -->
 						</section>
-
 						<!-- End of Service Section -->
-
 						<!-- Calendly link widget begin -->
 						<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-						<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
-							async>
+						<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async>
 						</script>
-						<!-- Calendly link widget end -->
-
+						<section id="experience" class="py-1 my-1 py-md-5 my-md-5" data-bs-theme="dark">
+							<div class="container">
+								<div
+									class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 m-2 m-md-0 p-2 p-md-5 bg-black">
+									<div class="col m-0">
+										<div class="mt-3">
+											<h4 class="fw-bold mb-2">Highly trained staff</h4>
+											<p class="text-white">Our team of experienced artists are certified in the
+												latest PMU
+												techniques, ensuring natural-looking and long-lasting results. Each member
+												has undergone
+												rigorous training to deliver precision and artistry in every brow. </p>
+										</div>
+									</div>
+									<div class="col m-0">
+										<div class="mt-3">
+											<h4 class="fw-bold mb-2">Over 12 years in business</h4>
+											<p class="text-white">With over a decade of experience in the beauty industry,
+												we've
+												perfected our craft. Our commitment to excellence has earned us a loyal
+												following of
+												satisfied clients.
+											</p>
+										</div>
+									</div>
+									<div class="col m-0">
+										<div class="mt-3">
+											<h4 class="fw-bold mb-2">Over 4 years in PMU Brows</h4>
+											<p class="text-white">Our PMU specialists have over 4 years of dedicated
+												experience,
+												allowing us to create customized brow designs that enhance your natural
+												beauty.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
 					</div>
-				</div>
-			</div>
-
-		</div>
-		<!-- Book Now Button -->
-		<div class="text-center m-2 p-2 m-md-5 p-md-5">
-			<h2 class="display-1 text-uppercase">Eye lashes</h2>
-			<p> Get ready to elevate your look with our lash procedure! Our skilled technicians apply
-				individual lash extensions to enhance your natural lashes, creating length, volume, and
-				definition. Whether you want a natural or dramatic look, we've got you covered. Our
-				lightweight and comfortable lash extensions last for weeks, giving you gorgeous lashes
-				without the hassle of mascara. Say hello to stunning lashes with our professional lash
-				procedure!
-				<br>
-				<a href="/eyelashes.html" class="btn btn-dark px-5 py-3">Book Now</a>
-
-
-		</div>
-		</div>
-		</figure>
-		</div>
-		</div>
-		</div>
+		</section>
 		<section id="experience" class="py-1 my-1 py-md-5 my-md-5" data-bs-theme="dark">
 			<div class="container">
 				<div
@@ -573,6 +560,8 @@
 			</div>
 			</div>
 		</section>
+
+
 		<section id="welcome" class="welcome my-2 my-md-5">
 			<div class="container">
 				<div class="row">
@@ -616,6 +605,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="bg-secondary py-5">
 			<div class="container">
 				<div class="row">
