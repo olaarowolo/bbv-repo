@@ -3,13 +3,11 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-
-
-.policy .single-card-link {
-	color: yellow 0, 0);
-	cursor: pointer;
-
+.single-card-link {
+	color: rgb(218, 252, 0);
 }
+
+
 .product-title {
 	color: white;
 }
@@ -109,7 +107,13 @@ body {
 }
 
 .policy-text-small {
-	font-size: 10px;
+	font-size: 11px;
+	color:#f8f7f7;
+
+}
+
+.policy-text {
+	font-size: 12px;
 	color:#f8f7f7;
 
 }
@@ -117,9 +121,9 @@ body {
 
 
 .note-text-small {
-	color: rgb(3, 3, 3);
-	font-size: 7px;
-	padding-top: 10px;
+	color: rgb(251, 251, 251);
+	font-size: 9px;
+	padding-top: 5px;
 	padding-bottom: 20px;
 	padding-left: 30px;
 	padding-right: 30px;

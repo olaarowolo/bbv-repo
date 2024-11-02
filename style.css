@@ -70,6 +70,25 @@ a {
   text-decoration: none;
   transition: all 0.3s ease-out;
 }
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.grey-link {
+  color: rgb(82, 82, 81);
+}
+.yellow-link {
+  color: yellow;
+}
+.red-link {
+  color: rgb(246, 131, 131);
+  font-weight: bold;
+}
+.red-link :hover {
+  color: green;
+}
+
 
 .container-fluid {
   max-width: 1800px;

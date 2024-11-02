@@ -25,7 +25,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="prod-style.css">
-
 </head>
 
 <body>
@@ -183,8 +182,7 @@
 							class="display-3">Reviews</span></a></li>
 				<li class="nav__list-item active-nav"><a href="/policy.html" class="hover-target"><span
 							class="display-3">Policy</span></a></li>
-				<
-			</ul>
+				< </ul>
 		</div>
 		<script>
 			if (window.location.pathname.endsWith('/trainings')) {
@@ -205,7 +203,8 @@
 			</label>
 		</nav>
 	</header>
-	<section id=" " class="py-1 my-1 py-md-5 my-md-5">
+	
+	<section class="py-1 my-1 py-md-5 my-md-5">
 		<div class=" container">
 			<div class="text-center ">
 				<div class="text-content mt-0" data-aos="fade-in">
@@ -225,7 +224,6 @@
 					<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async>
 					</script>
 					<!-- Calendly link widget end -->
-
 					<div id="touch-ups">
 						<!-- More Product Card Starts = Combination -->
 						<div class="row">
@@ -236,13 +234,14 @@
 										<img src="prod-img/comb-brows.webp" alt="">
 									</div>
 									<div class="info">
-										<h3 class="product-title-min">Combination <span class="product-title-h-min">Touch
+										<h3 class="product-title-min">Combination <span
+												class="product-title-h-min">Touch
 												up</span></h3>
 										<p class="price-min">...from £100</p>
-										<p class="policy-text-small policy single-card-link">
+										<p class="policy-text-small">
 											By clicking the 'book now' button you have accepted
-											<span class="single-card-link policy" href="/policy.html">our booking
-											policy</span>.  Ensure you have read before proceeding.
+											<a href="/policy.html" class="red-link">our
+												booking policy</a>. <br>Ensure you have read before proceeding.
 										</p>
 										<!-- Button to trigger modal for 6 WEEKS -->
 										<div class="tu-padding">
@@ -250,7 +249,6 @@
 												Book Combination Touch-up – 6 WEEKS
 											</a>
 										</div>
-										
 										<!-- Button to trigger modal for 8 WEEKS -->
 										<div class="tu-padding">
 											<a href="#" class="touch-up-text bk-btn-min" id="bookNowButton8">
@@ -263,28 +261,26 @@
 												Book Combination Touch-up – 10 WEEKS
 											</a>
 										</div>
-										 <!-- Button to trigger modal for 12 WEEKS -->
-										 <div class="tu-padding">
+										<!-- Button to trigger modal for 12 WEEKS -->
+										<div class="tu-padding">
 											<a href="#" class="touch-up-text bk-btn-min" id="bookNowButton12">
 												Book Combination Touch-up – 12 WEEKS
 											</a>
 										</div>
-										<!-- <div>
-											<p class="note-text-small">Ombré Brows touchup anything from 3 months is
-												<span style="font-weight: 800;">same price as new</span>
+										<div>
+											<p class="note-text-small">Combination Brows touchup anything from 3 months is <span style="font-weight: 800;">same price as new</span>
 											</p>
-										</div> -->
+										</div>
 									</div>
 								</div>
 							</div>
-
 							<!-- Modal Structure (Reused for all buttons) -->
 							<div id="termsModal"
 								style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); width: 300px; background-color: #fff; padding: 20px; box-shadow: 0px 0px 10px rgba(0,0,0,0.5); z-index: 1000;">
 								<h3>Please accept the terms</h3>
 								<p>By proceeding, you agree to have read our <a href="/policy.html">
 										<span style="font-weight: 800; color: red;">booking policy</span>
-									</a>. Ensure you have read before proceeding. </p>
+									</a>. <br> Ensure you have read before proceeding. </p>
 								<!-- Checkbox for consent -->
 								<label>
 									<input type="checkbox" id="termsCheckboxModal">
@@ -299,198 +295,11 @@
 										style="padding: 8px 12px; margin-left: 10px;">Cancel</button>
 								</div>
 							</div>
-
 							<!-- Overlay to dim the background -->
 							<div id="modalOverlay"
 								style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index: 999;">
 							</div>
 
-							<script>
-								// Store the URL based on which button is clicked
-								let bookingUrl = '';
-
-								// Function to show modal
-								function showModal() {
-									document.getElementById('termsModal').style.display = 'block';
-									document.getElementById('modalOverlay').style.display = 'block';
-								}
-
-								// Function to hide modal
-								function hideModal() {
-									document.getElementById('termsModal').style.display = 'none';
-									document.getElementById('modalOverlay').style.display = 'none';
-								}
-
-								// Show modal when "Book Now" buttons are clicked and set the booking URL
-								document.getElementById('bookNowButton6').addEventListener('click', function (event) {
-									event.preventDefault();
-									bookingUrl = 'https://calendly.com/beautybyvickky/combination-brows-touch-up-6-weeks';
-									showModal();
-								});
-
-								document.getElementById('bookNowButton8').addEventListener('click', function (event) {
-									event.preventDefault();
-									bookingUrl = 'https://calendly.com/beautybyvickky/combination-brows-touch-up-8-weeks';
-									showModal();
-								});
-
-								document.getElementById('bookNowButton10').addEventListener('click', function (event) {
-									event.preventDefault();
-									bookingUrl = 'https://calendly.com/beautybyvickky/combination-brows-touch-up-10-week';
-									showModal();
-								});
-
-								// Close modal when "Cancel" button is clicked
-								document.getElementById('closeModalButton').addEventListener('click', function () {
-									hideModal();
-								});
-
-								// Proceed button logic
-								document.getElementById('proceedButton').addEventListener('click', function () {
-									const checkbox = document.getElementById('termsCheckboxModal');
-									const alertMessage = document.getElementById('alertModal');
-
-									if (checkbox.checked) {
-										// If checkbox is checked, proceed to Calendly and close modal
-										alertMessage.style.display = 'none';
-										hideModal();
-										Calendly.initPopupWidget({
-											url: bookingUrl
-										});
-									} else {
-										// Show alert if checkbox is not checked
-										alertMessage.style.display = 'block';
-									}
-								});
-							</script>
-							<!-- Combination Touch-up Card -->
-							<div class="col">
-								<div class="single-card-min">
-									<div class="img-area-min">
-										<img src="prod-img/comb-brows.webp" alt="">
-									</div>
-									<div class="info">
-										<h3 class="product-title-min">Combination <span class="product-title-h-min">Touch
-												up</span></h3>
-										<p class="price-min">...from £100</p>
-										<p class="policy-text-small">
-											By clicking the 'book now' button you have accepted
-											<span href="https://beautybyvickkylounge.com/policy.html">
-												<span class="policy">booking policy</span>
-											</span>. Ensure you have read before proceeding.
-										</p>
-										<!-- Button to trigger modal for 6 WEEKS -->
-										<div style="padding-bottom: 20px;">
-											<a href="#" class="touch-up-text bk-btn-min" id="bookNowButton6m">
-												Book Combination Touch-up – 6 WEEKS
-											</a>
-										</div>
-										<!-- Button to trigger modal for 8 WEEKS -->
-										<div style="padding-bottom: 20px;">
-											<a href="#" class="touch-up-text bk-btn-min" id="bookNowButton8">
-												Book Combination Touch-up – 8 WEEKS
-											</a>
-										</div>
-										<!-- Button to trigger modal for 10 WEEKS -->
-										<div>
-											<a href="#" class="touch-up-text bk-btn-min" id="bookNowButton10">
-												Book Combination Touch-up – 10 WEEKS
-											</a>
-										</div>
-										<div>
-											<p class="note-text-small">Ombré Brows touchup anything from 3 months is
-												<span style="font-weight: 800;">same price as new</span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Modal Structure (Reused for all buttons) -->
-							<div id="termsModal"
-								style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); width: 300px; background-color: #fff; padding: 20px; box-shadow: 0px 0px 10px rgba(0,0,0,0.5); z-index: 1000;">
-								<h3>Please accept the terms</h3>
-								<p>By proceeding, you agree to have read our <a href="/policy.html">
-										<span style="font-weight: 800; color: red;">booking policy</span>
-									</a>. Ensure you have read before proceeding. </p>
-								<!-- Checkbox for consent -->
-								<label>
-									<input type="checkbox" id="termsCheckboxModal">
-									I agree to the terms and conditions
-								</label>
-								<p id="alertModal" style="display:none; color:red;">Please accept the terms before
-									proceeding.</p>
-								<!-- Buttons -->
-								<div style="padding-top: 10px;">
-									<button id="proceedButton" style="padding: 8px 12px;">Proceed</button>
-									<button id="closeModalButton"
-										style="padding: 8px 12px; margin-left: 10px;">Cancel</button>
-								</div>
-							</div>
-
-							<!-- Overlay to dim the background -->
-							<div id="modalOverlay"
-								style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index: 999;">
-							</div>
-
-							<script>
-								// Store the URL based on which button is clicked
-								let bookingUrlm = '';
-
-								// Function to show modal
-								function showModal() {
-									document.getElementById('termsModal').style.display = 'block';
-									document.getElementById('modalOverlay').style.display = 'block';
-								}
-
-								// Function to hide modal
-								function hideModal() {
-									document.getElementById('termsModal').style.display = 'none';
-									document.getElementById('modalOverlay').style.display = 'none';
-								}
-
-								// Show modal when "Book Now" buttons are clicked and set the booking URL
-								document.getElementById('bookNowButton6m').addEventListener('click', function (event) {
-									event.preventDefault();
-									bookingUrl = 'https://calendly.com/beautybyvickky/combination-brows-touch-up-6-weeks';
-									showModal();
-								});
-
-								document.getElementById('bookNowButton8').addEventListener('click', function (event) {
-									event.preventDefault();
-									bookingUrl = 'https://calendly.com/beautybyvickky/combination-brows-touch-up-8-weeks';
-									showModal();
-								});
-
-								document.getElementById('bookNowButton10').addEventListener('click', function (event) {
-									event.preventDefault();
-									bookingUrl = 'https://calendly.com/beautybyvickky/combination-brows-touch-up-10-week';
-									showModal();
-								});
-
-								// Close modal when "Cancel" button is clicked
-								document.getElementById('closeModalButton').addEventListener('click', function () {
-									hideModal();
-								});
-
-								// Proceed button logic
-								document.getElementById('proceedButton').addEventListener('click', function () {
-									const checkbox = document.getElementById('termsCheckboxModal');
-									const alertMessage = document.getElementById('alertModal');
-
-									if (checkbox.checked) {
-										// If checkbox is checked, proceed to Calendly and close modal
-										alertMessage.style.display = 'none';
-										hideModal();
-										Calendly.initPopupWidget({
-											url: bookingUrl
-										});
-									} else {
-										// Show alert if checkbox is not checked
-										alertMessage.style.display = 'block';
-									}
-								});
-							</script>
 
 							<!-- Ombré Touch-up Card -->
 							<div class="col">
@@ -501,36 +310,43 @@
 									<div class="info">
 										<h3 class="product-title-min">Ombré <span class="product-title-h-min"> Touch
 												up</span></h3>
-										<p class="price-min">...from £100</p>
+										<p class="price-min">...from £80</p>
 										<p class="policy-text-small">
 											By clicking the 'book now' button you have accepted
-											<a href="https://beautybyvickkylounge.com/policy.html">
-												<span class="policy">booking policy</span>
-											</a>. Ensure you have read before proceeding.
-											<!-- Checkbox for consent -->
-											<label>
-												<input type="checkbox" id="termsCheckbox2">
-												I agree to the terms and conditions
-											</label>
+											<a href="/policy.html" class="red-link">our
+												booking policy</a>. <br> Ensure you have read before proceeding.
 										</p>
-										<div style="padding-bottom: 20px;">
-											<a class="touch-up-text bk-btn-min"
-												onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/ombre-brows-touchup-6wks'});return false;">
+
+										<!-- Button to trigger modal for 6 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="OmbrebookNowButton6">
 												Book Ombré Touch-up – 6 WEEKS
 											</a>
 										</div>
-										<div style="padding-bottom: 20px;">
-											<a class="touch-up-text bk-btn-min"
-												onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/ombre-brows-touch-up-8-weeks'});return false;">
+										<!-- Button to trigger modal for 8 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="OmbrebookNowButton8">
 												Book Ombré Touch-up – 8 WEEKS
 											</a>
 										</div>
-										<div>
-											<a class="touch-up-text bk-btn-min"
-												onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/ombre-brows-touch-up-10-weeks'});return false;">
+										<!-- Button to trigger modal for 10 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="OmbrebookNowButton10">
 												Book Ombré Touch-up – 10 WEEKS
 											</a>
 										</div>
+										<!-- Button to trigger modal for 12 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="OmbrebookNowButton12">
+												Book Ombré Touch-up – 12 WEEKS
+											</a>
+										</div>
+
+
+
+
+										
+										
 										<div>
 											<p class="note-text-small">Ombré Brows touchup anything from 3 months is
 												<span style="font-weight: 800;"> same price as new</span></p>
@@ -539,7 +355,6 @@
 									</div>
 								</div>
 							</div>
-
 							<!-- Microblading Brows Card -->
 							<div class="col">
 								<div class="single-card-min">
@@ -547,40 +362,49 @@
 										<img src="prod-img/mb-brows.jpg" alt="">
 									</div>
 									<div class="info">
-										<h3 class="product-title-min">Microblading <span class="product-title-h-min"> Touch
+										<h3 class="product-title-min">Microblading <span class="product-title-h-min">
+												Touch
 												up</span></h3>
-										<p class="price-min">...from £100</p>
+										<p class="price-min">...from £80</p>
+										
+
 										<p class="policy-text-small">
 											By clicking the 'book now' button you have accepted
-											<a href="https://beautybyvickkylounge.com/policy.html">
-												<span class="policy">booking policy</span>
-											</a>. Ensure you have read before proceeding.
-											<!-- Checkbox for consent -->
-											<label>
-												<input type="checkbox" id="termsCheckbox4">
-												I agree to the terms and conditions
-											</label>
+											<a href="/policy.html" class="red-link">our
+												booking policy</a>. <br> Ensure you have read before proceeding.
 										</p>
-										<div style="padding-bottom: 20px;">
-											<a class="touch-up-text bk-btn-min"
-												onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/microblading-touch-up-6-weeks'});return false;">
+
+										<!-- Button to trigger modal for 6 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="MicrobladingbookNowButton6">
 												Book Microblading Touch-up – 6 WEEKS
 											</a>
 										</div>
-										<div style="padding-bottom: 20px;">
-											<a class="touch-up-text bk-btn-min"
-												onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/microblading-brows-touch-up-8-weeks'});return false;">
+										
+										<!-- Button to trigger modal for 8 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="MicrobladingbookNowButton8">
 												Book Microblading Touch-up – 8 WEEKS
 											</a>
 										</div>
-										<div>
-											<a class="touch-up-text bk-btn-min"
-												onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/ombre-brows-touch-up-10-weeks'});return false;">
+										<!-- Button to trigger modal for 8 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="MicrobladingbookNowButton10">
 												Book Microblading Touch-up – 10 WEEKS
 											</a>
 										</div>
+										
+										<!-- Button to trigger modal for 12 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="MicrobladingbookNowButton12">
+												Book Microblading Touch-up – 12 WEEKS
+											</a>
+										</div>
+										
+										
+										
 										<div>
-											<p class="note-text-small">Ombré Brows touchup anything from 3 months is
+											<p class="note-text-small">Microblading Brows touchup anything from 3 months is
 												<span style="font-weight: 800;"> same price as new</span></p>
 											</span></p>
 										</div>
@@ -591,42 +415,50 @@
 							<div class="col">
 								<div class="single-card-min">
 									<div class="img-area-min">
-										<img src="prod-img/ms-brows.3308270676691,cg_true" alt="">
+										<img src="prod-img/mb-brows.jpg" alt="">
 									</div>
 									<div class="info">
-										<h3 class="product-title-min">Microshading <span class="product-title-h-min"> Touch
+										<h3 class="product-title-min">Microshading <span class="product-title-h-min">
+												Touch
 												up</span></h3>
-										<p class="price-min">...from £100</p>
+										<p class="price-min">...from £80</p>
+										
+
 										<p class="policy-text-small">
 											By clicking the 'book now' button you have accepted
-											<a href="https://beautybyvickkylounge.com/policy.html">
-												<span class="policy">booking policy</span>
-											</a>. Ensure you have read before proceeding.
-											<br>
-											<!-- Checkbox for consent -->
-											<label>
-												<input type="checkbox" id="termsCheckbox4">
-												I agree to the terms and conditions
-											</label>
+											<a href="/policy.html" class="red-link">our
+												booking policy</a>. <br> Ensure you have read before proceeding.
 										</p>
-										<div id="bookButton4" style="padding-bottom: 20px;">
-											<a class="touch-up-text bk-btn-min"
-												onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/microshading-brows-touch-up-6-weeks'});return false;">
+
+										<!-- Button to trigger modal for 6 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="MicroshadingbookNowButton6">
 												Book Microshading Touch-up – 6 WEEKS
 											</a>
 										</div>
-										<div style="padding-bottom: 20px;">
-											<a class="touch-up-text bk-btn-min"
-												onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/microshading-brows-touch-up-8-weeks'});return false;">
+										
+										<!-- Button to trigger modal for 8 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="MicroshadingbookNowButton8">
 												Book Microshading Touch-up – 8 WEEKS
 											</a>
 										</div>
-										<div>
-											<a class="touch-up-text bk-btn-min"
-												onclick="Calendly.initPopupWidget({url: 'https://calendly.com/beautybyvickky/microshading-brows-touch-up-10-weeks'});return false;">
+										<!-- Button to trigger modal for 8 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="MicroshadingbookNowButton10">
 												Book Microshading Touch-up – 10 WEEKS
 											</a>
 										</div>
+										
+										<!-- Button to trigger modal for 12 WEEKS -->
+										<div class="tu-padding">
+											<a href="#" class="touch-up-text bk-btn-min" id="MicroshadingbookNowButton12">
+												Book Microshading Touch-up – 12 WEEKS
+											</a>
+										</div>
+										
+										
+										
 										<div>
 											<p class="note-text-small">Microshading Brows touchup anything from 3 months is
 												<span style="font-weight: 800;"> same price as new</span></p>
@@ -635,6 +467,12 @@
 									</div>
 								</div>
 							</div>
+
+
+
+
+
+
 							<!-- More Product Cards End -->
 							<!-- Modal Script -->
 							<script>
@@ -642,7 +480,6 @@
 								function setupBookingButtons(checkboxId, buttonId, calendlyUrl) {
 									const checkbox = document.getElementById(checkboxId);
 									const button = document.getElementById(buttonId);
-
 									const bookNow = () => {
 										if (checkbox.checked) {
 											Calendly.initPopupWidget({
@@ -652,10 +489,8 @@
 											alert('Please accept the terms and conditions before continuing.');
 										}
 									};
-
 									button.addEventListener('click', bookNow);
 								}
-
 								// Set up for each product
 								setupBookingButtons('termsCheckbox1', 'bookButton1', 'https://calendly.com/beautybyvickky/comb-brows-clone');
 								setupBookingButtons('termsCheckbox2', 'bookButton2', 'https://calendly.com/beautybyvickky/ombre-eyelashes');
@@ -663,133 +498,94 @@
 								setupBookingButtons('termsCheckbox4', 'bookButton4', 'https://calendly.com/beautybyvickky/microshading');
 							</script>
 						</div>
-					</section>
-
-
-
-
-
-
+	</section>
+	<section id="welcome" class="welcome my-2 my-md-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3 text-center">
+					<h2>We are creating a more personal and simple beauty experience for clients and beauty
+						specialists
+						alike.</h2>
+				<p>Our mission is to provide a safe, clean and welcoming environment for all our clients</p>
 				</div>
 			</div>
-
-
 		</div>
-
-
-
-		<section id="experience" class="py-1 my-1 py-md-5 my-md-5" data-bs-theme="dark">
-			<div class="container">
-				<div
-					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 m-2 m-md-0 p-2 p-md-5 bg-black">
-					<div class="col m-0">
-						<div class="mt-3">
-							<h4 class="fw-bold mb-2">Highly trained staff</h4>
-							<p class="text-white">Our team of experienced artists are certified in the latest PMU
-								techniques, ensuring natural-looking and long-lasting results. Each member has undergone
-								rigorous training to deliver precision and artistry in every brow. </p>
-						</div>
+	</section>
+	<section id="experience" class="py-1 my-1 py-md-5 my-md-5" data-bs-theme="dark">
+		<div class="container">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 m-2 m-md-0 p-2 p-md-5 bg-black">
+				<div class="col m-0">
+					<div class="mt-3">
+						<h4 class="fw-bold mb-2">Highly trained staff</h4>
+						<p class="text-white">Our team of experienced artists are certified in the latest PMU
+							techniques, ensuring natural-looking and long-lasting results. Each member has undergone
+							rigorous training to deliver precision and artistry in every brow. </p>
 					</div>
-					<div class="col m-0">
-						<div class="mt-3">
-							<h4 class="fw-bold mb-2">Over 12 years in business</h4>
-							<p class="text-white">With over a decade of experience in the beauty industry, we've
-								perfected our craft. Our commitment to excellence has earned us a loyal following of
-								satisfied clients.
-							</p>
-						</div>
+				</div>
+				<div class="col m-0">
+					<div class="mt-3">
+						<h4 class="fw-bold mb-2">Over 12 years in business</h4>
+						<p class="text-white">With over a decade of experience in the beauty industry, we've
+							perfected our craft. Our commitment to excellence has earned us a loyal following of
+							satisfied clients.
+						</p>
 					</div>
-					<div class="col m-0">
-						<div class="mt-3">
-							<h4 class="fw-bold mb-2">Over 4 years in PMU Brows</h4>
-							<p class="text-white">Our PMU specialists have over 4 years of dedicated experience,
-								allowing us to create customized brow designs that enhance your natural beauty.
-							</p>
-						</div>
+				</div>
+				<div class="col m-0">
+					<div class="mt-3">
+						<h4 class="fw-bold mb-2">Over 4 years in PMU Brows</h4>
+						<p class="text-white">Our PMU specialists have over 4 years of dedicated experience,
+							allowing us to create customized brow designs that enhance your natural beauty.
+						</p>
 					</div>
 				</div>
 			</div>
+		</div>
+		</div>
+	</section>
+	<section class="testimonials py-5">
+		<div class="container">
+			<div class="row">
+				<div class="section-header text-center my-5">
+					<h3 class="display-1 text-uppercase">Customer Reviews</h3>
+				</div>
 			</div>
-		</section>
-		<section id="welcome" class="welcome my-2 my-md-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 offset-md-3 text-center">
-						<h2>We are creating a more personal and simple beauty experience for clients and beauty
-							specialists
-							alike.</h2>
-						<p>Mattis nisl eu quam elementum vulputate ultrices blandit. Congue molestie et varius risus,
-							tristique fermentum purus nunc sed. Et tristique cursus felis placerat proin aliquam.
-							Faucibus
-							aliquam nam morbi volutpat scelerisque cursus in est. Posuere lacus risus faucibus a morbi
-							aliquam malesuada sed sed.</p>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="testimonial-item" style="text-align: center;">
+						<blockquote>
+							<svg class="text-primary" width="24" height="24" viewBox="0 0 24 24">
+								<use xlink:href="#quote"></use>
+							</svg>
+							<p class="fs-5">“I was hesitant about getting PMU, but Beautybyvickky was so reassuring
+								and professional. The procedure was quick and painless, and the results are beyond
+								my expectations. My brows look absolutely stunning now!”</p>
+							<div class="review-title"><strong>Mirabel Davis</strong></div>
+							<div class="review-desc text-muted"> Kent, England</div>
+						</blockquote>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section id="hairshop" class="personal-info py-2 py-md-5 overflow-hidden">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-7">
-						<figure data-aos="slide-right">
-							<img src="images/eb-img0.jpeg" class="img-fluid" alt="Beauty">
-						</figure>
-					</div>
-					<div class="col-md-5">
-						<div class="m-2 p-2 m-md-5 p-md-5" data-aos="slide-left">
-							<h2 class="display-1 text-uppercase">Shop for Hair</h2>
-							<!-- <p>Mattis nisl eu quam elementum vulputate ultrices blandit. Congue molestie et varius risus, tristique fermentum purus nunc sed. Et tristique cursus felis placerat proin aliquam. Faucibus aliquam nam morbi volutpat scelerisque cursus in est. Posuere lacus risus faucibus a morbi aliquam malesuada sed sed.</p> -->
-							<a href="/hairshop.html" class="btn btn-dark px-5 py-3">Book Now</a>
+		</div>
+	</section>
+	<section class="bg-secondary py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<div class="row">
+						<div class="col-md-8">
+							<h3>Contact us for Appointments</h3>
+							<p class="text-muted">Use our end to end booking system</p>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="testimonials py-5">
-			<div class="container">
-				<div class="row">
-					<div class="section-header text-center my-5">
-						<h3 class="display-1 text-uppercase">Customer Reviews</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="testimonial-item" style="text-align: center;">
-							<blockquote>
-								<svg class="text-primary" width="24" height="24" viewBox="0 0 24 24">
-									<use xlink:href="#quote"></use>
-								</svg>
-								<p class="fs-5">“I was hesitant about getting PMU, but Beautybyvickky was so reassuring
-									and professional. The procedure was quick and painless, and the results are beyond
-									my expectations. My brows look absolutely stunning now!”</p>
-								<div class="review-title"><strong>Mirabel Davis</strong></div>
-								<div class="review-desc text-muted"> Kent, England</div>
-							</blockquote>
+						<div class="col-md-4">
+							<a href="https://beautybyvickkylounge.com/services.html" class="btn btn-dark px-5 py-3">Book
+								Now</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="bg-secondary py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 offset-md-2">
-						<div class="row">
-							<div class="col-md-8">
-								<h3>Contact us for Appointments</h3>
-								<p class="text-muted">Use our end to end booking system</p>
-							</div>
-							<div class="col-md-4">
-								<a href="https://beautybyvickkylounge.com/services.html"
-									class="btn btn-dark px-5 py-3">Book
-									Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		</div>
+	</section>
 	</section>
 	<footer id="footer" class="bg-black pt-5" data-bs-theme="dark">
 		<div class="container">
@@ -944,8 +740,11 @@
 	<script type="text/javascript" src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<!-- Link Product Card Script -->
-	<script src="prod-script.js"></script>
+	<script type="text/javascript" src="prod-script.js"></script>
 	<!-- End of Product Card Script -->
+	<!-- Accept Terms  and Conditions Script -->
+	<script src="js/accept-terms.js"></script>
+	<!-- End of Accept Terms and Conditions Script -->
 </body>
 
 </html>
