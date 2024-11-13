@@ -15,6 +15,7 @@ body {
 .product-title-min {
 	color: rgb(255, 255, 255);
 }
+
 .product-title-h-min {
 	color: rgb(153, 153, 153);
 }
@@ -56,6 +57,7 @@ body {
 .tu-padding {
 	padding-bottom: 10px;
 }
+
 .img-area-min {
 	position: relative;
 	width: 100%;
@@ -159,6 +161,7 @@ body {
 	transform: translateY(-3px);
 	/* Slightly pops up the button */
 }
+
 .tu-bk-btn-min {
 	color: #fff;
 	border-radius: 10px;

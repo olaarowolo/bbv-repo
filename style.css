@@ -643,6 +643,11 @@ body.nav-active .nav__list-item:nth-child(10) {
   #billboard figure figcaption {
     position: relative;
   }
+
+  .oa-links {
+    width: 26px;
+  
+  }
 }
 
 .display-3 {
@@ -784,4 +789,12 @@ body.nav-active .nav__list-item:nth-child(10) {
   background-repeat: no-repeat;
   color: white; /* Ensures the text is readable over the background */
   padding: 2rem; /* Adjust padding as needed for spacing */
+}
+
+.oamedia {
+  color: orange
+}
+
+.oa-links {
+  width: 26px;
 }
