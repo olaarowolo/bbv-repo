@@ -1,77 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beauty by Vickky Lounge - Website Readme</title>
-</head>
-<body>
-  <h1>Beauty by Vickky Lounge - Website Readme</h1>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-  <h2>Project Description</h2>
-  <p>This website serves as an online platform for Beauty by Vickky Lounge, a permanent makeup and eyelash extension services provider. It offers information about the available services, including microblading, microshading, ombre brows, and combination brows, as well as eyelash extensions.</p>
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-  <h2>Key Features</h2>
-  <ul>
-    <li>Service Descriptions: Detailed explanations of each permanent makeup technique.</li>
-    <li>Contact Information: Provides ways for potential clients to reach out and book appointments.</li>
-    <li>Free Template by TemplatesJungle.com: This website is built using a free HTML and CSS template provided by <a href="https://templatesjungle.com/">TemplatesJungle.com</a>.</li>
-  </ul>
+## About Laravel
 
-  <h2>Target Audience</h2>
-  <p>Individuals interested in enhancing their eyebrows or lashes through permanent makeup or eyelash extensions.</p>
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-  <h2>Getting Started</h2>
-  <ol>
-    <li>Visit the Website: Access the website at <a href="https://beautybyvickkylounge.com/">https://beautybyvickkylounge.com/</a>.</li>
-    <li>Explore Services: Browse through the information about different permanent makeup techniques and eyelash extensions.</li>
-    <li>Contact for Booking: Use the provided contact information to schedule an appointment or inquire about pricing.</li>
-  </ol>
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-  <h2>Template Usage</h2>
-  <p>It is a free HTML CSS template by TemplatesJungle.com.</p>
-  <ul>
-    <li>You can use this template as a starter template and modify it according to your requirement.</li>
-    <li>The code is consistent and can be easily maintained.</li>
-  </ul>
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-  <h2>Template License (Free Version)</h2>
-  <p>FREE FOR BOTH PERSONAL AND COMMERCIAL USE.</p>
-  <p>You can use it in your personal and commercial projects as long as you don't remove the TemplatesJungle.com credit link in the footer.</p>
+## Learning Laravel
 
-  <h2>Template Rights (Free Version)</h2>
-  <ul>
-    <li>You are allowed to use it in your personal and commercial projects.</li>
-    <li>You can modify and sell it to your clients.</li>
-  </ul>
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-  <h2>Template Prohibitions (Free Version)</h2>
-  <ul>
-    <li>You cannot remove the credit link.</li>
-    <li>You cannot resell or redistribute the template (paid or free) as it is.</li>
-    <li>You cannot use it to build premium templates, themes, or any other goods to be sold on marketplaces.</li>
-    <li>If you want to share the free resource, you must point it to the original TemplatesJungle.com resource page. </li>
-    <li>You cannot host the download file on your website.</li>
-  </ul>
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-  <h2>Template Support (Free Version)</h2>
-  <p>You can contact TemplatesJungle.com to report any bugs and errors, and they will try to fix them.</p>
-  <p>Feel free to let them know about what you want to see in future free templates.</p>
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-  <h2>Credits & References</h2>
-  <ul>
-    <li>Bootstrap: <a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
-    <li>Stock Photos:</li>
-      <ul>
-        <li>Unsplash: <a href="https://unsplash.com/">https://unsplash.com/</a></li>
-        <li>Freepik: <a href="https://www.freepik.com/">https://www.freepik.com/</a></li>
-        <li>Pexels: <a href="https://www.pexels.com/">https://www.pexels.com/</a></li>
-      </ul>
-    <li>Fonts: Google Fonts: <a href="https://fonts.google.com/">https://fonts.google.com/</a></li>
-    <li>Icons: IcoMoon: <a href="https://icomoon.io/">https://icomoon.io/</
-    
-# bbv-repo
-# bbv-repo
-# bbv-website git init git add README.md git commit -m first commit git branch -M main git remote add origin https://github.com/olaarowolo/bbv-repo.git git push -u origin main
-# bbv-wesbite
-# bbv-wesbite
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+
+### Premium Partners
+
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
