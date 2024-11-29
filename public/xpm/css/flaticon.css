@@ -1,0 +1,171 @@
+@font-face {
+	font-family: "flaticon";
+	src: url("../fonts/flaticon.woff") format("woff2"),
+url("../fonts/flaticon.woff") format("woff"),
+url("../fonts/flaticon.eot") format("embedded-opentype"),
+url("../fonts/flaticon.ttf") format("truetype"),
+url("../fonts/flaticon.svg") format("svg")
+}
+
+i[class^="pbmit_spaville-"]:before, i[class*=" pbmit-spaville-icon-"]:before {
+	font-family: flaticon !important;
+	font-style: normal;
+	font-weight: normal !important;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.pbmit-spaville-icon-depilation:before {
+	content: "\f101";
+}
+.pbmit-spaville-icon-foot-massage:before {
+	content: "\f102";
+}
+.pbmit-spaville-icon-acupuncture:before {
+	content: "\f103";
+}
+.pbmit-spaville-icon-facial-mask:before {
+	content: "\f104";
+}
+.pbmit-spaville-icon-essential-oil:before {
+	content: "\f105";
+}
+.pbmit-spaville-icon-manicure:before {
+	content: "\f106";
+}
+.pbmit-spaville-icon-bathtub:before {
+	content: "\f107";
+}
+.pbmit-spaville-icon-herbal-massage:before {
+	content: "\f108";
+}
+.pbmit-spaville-icon-cream:before {
+	content: "\f109";
+}
+.pbmit-spaville-icon-aromatic:before {
+	content: "\f10a";
+}
+.pbmit-spaville-icon-slipper:before {
+	content: "\f10b";
+}
+.pbmit-spaville-icon-pedicure:before {
+	content: "\f10c";
+}
+.pbmit-spaville-icon-mortar:before {
+	content: "\f10d";
+}
+.pbmit-spaville-icon-salt:before {
+	content: "\f10e";
+}
+.pbmit-spaville-icon-face-massage:before {
+	content: "\f10f";
+}
+.pbmit-spaville-icon-staff:before {
+	content: "\f110";
+}
+.pbmit-spaville-icon-massage:before {
+	content: "\f111";
+}
+.pbmit-spaville-icon-facial-treatment:before {
+	content: "\f112";
+}
+.pbmit-spaville-icon-sponge:before {
+	content: "\f113";
+}
+.pbmit-spaville-icon-soap:before {
+	content: "\f114";
+}
+.pbmit-spaville-icon-face-treatment:before {
+	content: "\f115";
+}
+.pbmit-spaville-icon-bathrobe:before {
+	content: "\f116";
+}
+.pbmit-spaville-icon-pedicure-1:before {
+	content: "\f117";
+}
+.pbmit-spaville-icon-candle:before {
+	content: "\f118";
+}
+.pbmit-spaville-icon-towel:before {
+	content: "\f119";
+}
+.pbmit-spaville-icon-stone:before {
+	content: "\f11a";
+}
+.pbmit-spaville-icon-honey-jar:before {
+	content: "\f11b";
+}
+.pbmit-spaville-icon-sauna:before {
+	content: "\f11c";
+}
+.pbmit-spaville-icon-aromatherapy:before {
+	content: "\f11d";
+}
+.pbmit-spaville-icon-brush:before {
+	content: "\f11e";
+}
+.pbmit-spaville-icon-full-stop:before {
+	content: "\f11f";
+}
+.pbmit-spaville-icon-gmail:before {
+	content: "\f120";
+}
+.pbmit-spaville-icon-location:before {
+	content: "\f121";
+}
+.pbmit-spaville-icon-call:before {
+	content: "\f122";
+}
+.pbmit-spaville-icon-calendar:before {
+	content: "\f123";
+}
+.pbmit-spaville-icon-high-quality:before {
+	content: "\f124";
+}
+.pbmit-spaville-icon-arrow:before {
+	content: "\f125";
+}
+.pbmit-spaville-icon-quote:before {
+	content: "\f126";
+}
+.pbmit-spaville-icon-pbm-contacts:before {
+	content: "\f127";
+}
+.pbmit-spaville-icon-play-button:before {
+	content: "\f128";
+}
+.pbmit-spaville-icon-line:before {
+	content: "\f129";
+}
+.pbmit-spaville-icon-line-1:before {
+	content: "\f12a";
+}
+.pbmit-spaville-icon-line-2:before {
+	content: "\f12b";
+}
+.pbmit-spaville-icon-line-3:before {
+	content: "\f12c";
+}
+.pbmit-spaville-icon-line-4:before {
+	content: "\f12d";
+}
+.pbmit-spaville-icon-line-5:before {
+	content: "\f12e";
+}
+.pbmit-spaville-icon-line-6:before {
+	content: "\f12f";
+}
+.pbmit-spaville-icon-line-7:before {
+	content: "\f130";
+}
+.pbmit-spaville-icon-pbm-working-time:before {
+	content: "\f131";
+}
+.pbmit-spaville-icon-high-quality-true:before {
+	content: "\f132";
+}
+
