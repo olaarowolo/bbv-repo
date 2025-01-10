@@ -262,8 +262,17 @@
 												<input type="checkbox" id="termsCheckbox1" >
 												I agree to the terms and conditions
 											</label>
-											<!-- Book Now button -->
-											<button id="bookButton1" class="pay-deposit">Book Now</button>
+											
+											<a href="https://calendly.com/beautybyvickky/combination-brows-paypal">
+
+											</a>
+											
+											<!-- Book Now button -->											
+											<button id="bookButton1" class="pay-deposit ">Book & Pay With Card Now</button>
+											
+											<!-- Pay with PayPal button -->
+											<button id="bookButton1-paypal" class="pay-deposit paypal">Book & Pay With  <img class="paypal paypal-button-img" src="/images/paypal-min.png"  alt="PayPal Logo" width="15%"> now </button>
+																			
 										</div>
 									</div>
 									<!-- Modal for Combination Brows -->
@@ -309,7 +318,10 @@
 												I agree to the terms and conditions
 											</label>
 											<!-- Book Now button -->
-											<button id="bookButton2" class="pay-deposit">Book Now</button>
+											<button id="bookButton2" class="pay-deposit">Book & Pay With Card Now</button>
+
+											<!-- Pay with PayPal button -->
+											<button id="bookButton2-paypal" class="pay-deposit paypal">Book & Pay With  <img class="paypal paypal-button-img" src="/images/paypal-min.png"  alt="PayPal Logo" width="15%"> now </button>
 										</div>
 									</div>
 									<!-- Modal for Ombré Brows -->
@@ -355,7 +367,9 @@
 												I agree to the terms and conditions
 											</label>
 											<!-- Book Now button -->
-											<button id="bookButton3" class="pay-deposit">Book Now</button>
+											<button id="bookButton3" class="pay-deposit">Book & Pay With Card Now</button>
+											<!-- Pay with PayPal button -->
+											<button id="bookButton3-paypal" class="pay-deposit paypal">Book & Pay With  <img class="paypal paypal-button-img" src="/images/paypal-min.png"  alt="PayPal Logo" width="15%"> now </button>
 										</div>
 									</div>
 									<!-- Modal for Microblading Brows -->
@@ -401,7 +415,9 @@
 												I agree to the terms and conditions
 											</label>
 											<!-- Book Now button -->
-											<button id="bookButton4" class="pay-deposit">Book Now</button>
+											<button id="bookButton4" class="pay-deposit">Book & Pay With Card Now</button>
+											<!-- Pay with PayPal button -->
+											<button id="bookButton4-paypal" class="pay-deposit paypal">Book & Pay With  <img class="paypal paypal-button-img" src="/images/paypal-min.png"  alt="PayPal Logo" width="15%"> now </button>
 										</div>
 									</div>
 									<!-- Modal for Microshading Brows -->
@@ -465,9 +481,22 @@
 							}
 							// Set up for each product
 							setupBookingButtons('termsCheckbox1', 'bookButton1', 'https://calendly.com/beautybyvickky/comb-brows-clone');
+
 							setupBookingButtons('termsCheckbox2', 'bookButton2', 'https://calendly.com/beautybyvickky/ombre-eyelashes');
+							
 							setupBookingButtons('termsCheckbox3', 'bookButton3', 'https://calendly.com/beautybyvickky/microblading');
+							
 							setupBookingButtons('termsCheckbox4', 'bookButton4', 'https://calendly.com/beautybyvickky/microshading');
+							
+							// Paypal set up button for each product
+
+							setupBookingButtons('termsCheckbox1', 'bookButton1-paypal', 'https://calendly.com/beautybyvickky/combination-brows-paypal');
+							
+							setupBookingButtons('termsCheckbox2', 'bookButton2-paypal', 'https://calendly.com/beautybyvickky/ombre-brows-paypal');
+							
+							setupBookingButtons('termsCheckbox3', 'bookButton3-paypal', 'https://calendly.com/beautybyvickky/microblading-paypal');
+							
+							setupBookingButtons('termsCheckbox4', 'bookButton4-paypal', 'https://calendly.com/beautybyvickky/microshading-paypal');
 						</script>
 						<!-- Calendly link widget begin -->
 						<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">

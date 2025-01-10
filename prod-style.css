@@ -31,7 +31,7 @@ body {
 .single-card {
 	position: relative;
 	width: 290px;
-	height: 550px;
+	height: 610px;
 	margin: 15px;
 	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 	transition: box-shadow 0.3s ease;
@@ -140,7 +140,6 @@ body {
 
 }
 
-
 .bk-btn-min {
 	color: #fff;
 	border-radius: 10px;
@@ -233,8 +232,8 @@ body {
 	background-color: #fff;
 	color: #333;
 	padding: 10px 15px;
-	border-radius: 4px;
-	font-size: 12px;
+	border-radius: 10px;
+	font-size: 9px;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -244,7 +243,7 @@ body {
 }
 
 .add-to-cart:hover, .view-details:hover, .pay-deposit:hover {
-	background-color: rgb(35, 33, 33);
+	background-color: rgb(33, 35, 34);
 	color: #fff;
 	border: none;
 }
@@ -363,4 +362,17 @@ body {
 	font-size: 24px;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+/* CSS to invert the PayPal logo on hover */
+#bookButton1-paypal:hover img.paypal {
+	filter: invert(100%);
+  }
+
+  
+.paypal-button-img {
+	position: relative;
+	width: 20%;
+	height: 10px;
+	overflow: hidden;
 }
