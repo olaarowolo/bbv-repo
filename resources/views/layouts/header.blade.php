@@ -23,12 +23,12 @@
                                     </svg>
                                 </span>
                                 <ul class="navigation clearfix">
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="{{ route('home') }}">Home</a></li>
                                     <li class="dropdown">
                                         <a href="#">Services</a>
                                         <ul>
                                             <li><a href="#">Trainings</a></li>
-                                            <li><a href="#">Make Up</a></li>
+                                            <li><a href="{{ route('makeup') }}">Make Up</a></li>
                                             <li><a href="#">Brows</a></li>
                                             <li><a href="#">Brow Touch Up</a></li>
                                             <li><a href="#">Eye Lashes</a></li>
@@ -47,7 +47,7 @@
             <div class="pbmit-logo-area d-flex align-items-center">
                 <div class="site-branding">
                     <h1 class="site-title">
-                        <a href="#">
+                        <a href="{{ route('home') }}">
                             <img class="logo-img" src="{{ asset('xpm/images/logo/logo513x136.svg') }}"
                                 alt="BeautyByVickky">
                         </a>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="pbmit-button-box-second">
-                    <a class="pbmit-btn" href="../html-demo/make-appointments-01.html">
+                    <a class="pbmit-btn" href="{{ route('booking') }}">
                         <span class="pbmit-button-content-wrapper">
                             <span class="pbmit-button-text">Book Now</span>
                             <svg class="pbmit-svg-arrow" xmlns="http://www.w3.org/2000/svg"

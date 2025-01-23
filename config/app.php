@@ -28,6 +28,14 @@ return [
 
     'env' => env('APP_ENV', 'production'),
 
+    'square' => [
+        'id' => env('SQUARE_ID'),
+        'key' => env('SQUARE_KEY'),
+        'location' => env('SQUARE_LOCATION'),
+        'currency' => env('SQUARE_CURRENCY'),
+        'js_script' => env('SQUARE_JS_CDN')
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode

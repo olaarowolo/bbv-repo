@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::view('/', 'pages.home')->name('home');
+Route::view('makeup', 'pages.makeup')->name('makeup');
+Route::view('book-appointment', 'pages.payments')->name('booking');
+Route::post('/pay', 'PaymentsController@processPayment')->name('pay');
