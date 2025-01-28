@@ -32,4 +32,5 @@
     <link rel="stylesheet" href="{{ asset('xpm/css/style.css') }}">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{{ asset('xpm/css/responsive.css') }}">
+    @yield('styles')
 </head>

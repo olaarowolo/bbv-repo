@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('styles')
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+@endsection
+
 @section('content')
     <div class="page-content  pbmit-bg-color-light">
         <!-- Title Bar -->
@@ -38,7 +42,8 @@
                                 <h2 class="pbmit-title">Welcome</h2>
                                 <div class="pbmit-heading-desc">
                                     Thank you for choosing to book an appointment with BeautyByViccky. We charge a
-                                    refundable upfront payment of <b>$100</b> to proceed with the booking.
+                                    refundable upfront payment of <b> {{ config('app.square.currency_symbol') }}
+                                        {{ config('app.square.base_price') }} </b> to proceed with the booking.
                                 </div>
                             </div>
                             <div class="pbmit-contact-social">
@@ -73,19 +78,25 @@
                     <div class="col-md-12 col-xl-7">
                         <div class="contact-form-rightbox">
                             <h4 class="pbmit-subtitle">Basic Information</h4>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-danger" id="error_box_top">
+                                    </div>
+                                </div>
+                            </div>
                             <form id="payment-form">
                                 @csrf
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Full Name *" name="name"
-                                            required>
+                                        <input type="text" class="form-control" placeholder="Full Name *" id="name"
+                                            name="name" required>
                                     </div>
                                     <div class="col-sm-12 col-md-6">
                                         <input type="email" class="form-control" placeholder="Email Address*"
-                                            name="email" required>
+                                            name="email" id="email" required>
                                     </div>
                                     <div class="col-sm-12 col-md-12">
-                                        <select name="service">
+                                        <select name="service" id="service">
                                             <option value="Available service" selected disabled>Available service</option>
                                             <option value="makeup">Make Up</option>
                                             <option value="eyebrow">Eye Brow</option>
@@ -96,18 +107,20 @@
                                     </div>
                                     <div class="col-sm-12 col-md-6">
                                         <input class="form-control" aria-required="true" aria-invalid="false" value=""
-                                            type="tel" placeholder="Phone Number" name="phone" required>
+                                            type="tel" placeholder="Phone Number" id="phone" name="phone"
+                                            required>
                                     </div>
                                     <div class="col-sm-12 col-md-6">
                                         <input class="form-control" aria-required="true" aria-invalid="false" value=""
-                                            type="date" name="date" required>
+                                            type="datetime-local" id="date" name="date" required>
                                     </div>
                                     <div class="col-md-12">
-                                        <textarea name="note" cols="40" rows="10" class="form-control" placeholder="Leave a note"></textarea>
+                                        <textarea name="note" id="note" cols="40" rows="10" class="form-control" placeholder="Leave a note"></textarea>
                                     </div>
                                     <div class="col-md-12">
                                         <div id="card-container"></div>
-                                        <button id="card-button" type="button" class="pbmit-btn pbmit-btn-blackish mt-2">
+                                        <button id="card-button" type="button"
+                                            class="pbmit-btn pbmit-btn-blackish mt-2">
                                             <span class="pbmit-button-content-wrapper">
                                                 <span class="pbmit-button-text">Book Now</span>
                                                 <svg class="pbmit-svg-arrow" xmlns="http://www.w3.org/2000/svg"
@@ -123,6 +136,12 @@
                                                 </svg>
                                             </span>
                                         </button>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12 text-danger" id="error_box_top">
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div id="payment-status-container"></div>
                                     </div>
                                     <div class="col-md-12 mt-2">
@@ -152,6 +171,7 @@
 
         document.addEventListener('DOMContentLoaded', async function() {
             if (!window.Square) {
+                alert('Could not load payment, please reload the page.')
                 throw new Error('Square.js failed to load properly');
             }
 
@@ -160,6 +180,7 @@
             try {
                 card = await initializeCard(payments);
             } catch (e) {
+                alert('Could not initialize card, please reload the page.')
                 console.error('Initializing Card failed', e);
                 return;
             }
@@ -168,9 +189,8 @@
                 event.preventDefault();
 
                 try {
-                    // disable the submit button as we await tokenization and make a
-                    // payment request.
-                    cardButton.disabled = true;
+                    // disable the submit button as we await tokenization and make a payment request.
+                    // cardButton.disabled = true;
                     const token = await tokenize(paymentMethod);
                     const paymentResults = await createPayment(token);
                     displayPaymentResults('SUCCESS');
@@ -194,21 +214,32 @@
             // to the project server code so that a payment can be created with 
             // Payments API
             async function createPayment(token) {
+                console.log(locationId);
+                console.log(token);
+
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const service = document.getElementById("service").value;
+                const phone = document.getElementById("phone").value;
+                const date = document.getElementById("date").value;
+                const note = document.getElementById("note").value;
+
                 const body = JSON.stringify({
                     locationId,
-                    sourceId: token,
+                    token: token,
                     idempotencyKey: window.crypto.randomUUID(),
-                    name,
-                    email,
-                    service,
-                    phone,
-                    date,
-                    note
+                    name: name,
+                    email: email,
+                    service: service,
+                    phone: phone,
+                    date: date,
+                    note: note,
                 });
                 const paymentResponse = await fetch("{{ route('pay') }}", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     },
                     body,
                 });
@@ -219,11 +250,6 @@
                 throw new Error(errorBody);
             }
 
-            // This function tokenizes a payment method. 
-            // The ‘error’ thrown from this async function denotes a failed tokenization,
-            // which is due to buyer error (such as an expired card). It's up to the
-            // developer to handle the error and provide the buyer the chance to fix
-            // their mistakes.
             async function tokenize(paymentMethod) {
                 const tokenResult = await paymentMethod.tokenize();
                 if (tokenResult.status === 'OK') {
@@ -237,8 +263,6 @@
                 }
             }
 
-            // Helper method for displaying the Payment Status on the screen.
-            // status is either SUCCESS or FAILURE;
             function displayPaymentResults(status) {
                 const statusContainer = document.getElementById(
                     'payment-status-container'

@@ -32,8 +32,11 @@ return [
         'id' => env('SQUARE_ID'),
         'key' => env('SQUARE_KEY'),
         'location' => env('SQUARE_LOCATION'),
-        'currency' => env('SQUARE_CURRENCY'),
-        'js_script' => env('SQUARE_JS_CDN')
+        'currency' => env('SQUARE_CURRENCY', 'GBP'),
+        'js_script' => env('SQUARE_JS_CDN'),
+        'currency_symbol' => '£',
+        'base_price' => env('SQUARE_BASE_PRICE', 50),
+        'environment' => env('SQUARE_ENVIRONMENT'),
     ],
 
     /*

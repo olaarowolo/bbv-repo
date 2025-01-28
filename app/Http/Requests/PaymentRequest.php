@@ -11,10 +11,10 @@ class PaymentRequest extends FormRequest
     /**
      * Determine if the user is authorized to make this request.
      */
-    public function authorize(): bool
-    {
-        return false;
-    }
+    // public function authorize(): bool
+    // {
+    //     return true;
+    // }
 
     /**
      * Get the validation rules that apply to the request.
@@ -25,21 +25,20 @@ class PaymentRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:125',
-            'email' => 'required|email:rfc,dns,spoof,filter,strict',
+            'email' => 'required|email:rfc,dns,filter,strict',
             'service' => 'required|in:makeup,eyebrow,touchup,eyelash,hairshop',
-            'date' => 'required|date_format:m/d/Y|after:' . now()->addHour()->format('Y-m-d H:i:s'),
+            'date' => 'required|date|after:today',
             'note' => 'string|max:125',
             'phone' => 'required',
         ];
     }
 
-    
     public function failedValidation(Validator $validator)
     {
         throw new HttpResponseException(response()->json([
             'success'   => false,
             'message'   => $validator->errors()->first(),
             'data'      => $validator->errors()
-        ]));
+        ], 400));
     }
 }
