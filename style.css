@@ -684,14 +684,36 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 
 .homepage {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background: url("img/bgimg.png");
-  background-position: center 65%;
-  background-size: cover;
-  background-attachment: fixed;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  position: relative; /* Positioning context for absolute children */
+  background: url("img/bgimg.png") no-repeat center center; /* Center background */
+  background-size: cover; /* Cover the entire area */
+  background-attachment: fixed; /* Fixed attachment */
 }
+
+@media (max-width: 768px) {
+  .homepage {
+    height: 100%; /* Adjust height for smaller screens */
+    background-attachment: scroll; /* Change to scroll on mobile for better performance */
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage {
+    background: none; /* Disable background on mobile */
+  }
+}
+
+/* Specific styles for iPhone 13 */
+@media only screen and (min-device-width: 390px) and (max-device-width: 390px) and (min-device-height: 844px) and (max-device-height: 844px) and (-webkit-min-device-pixel-ratio: 2) {
+  .homepage {
+    background: none; /* Disable background for iPhone 13 */
+    height: auto; /* Allow for content to dictate height */
+  }
+}
+
+
 
 .homepage::before {
   content: "";
