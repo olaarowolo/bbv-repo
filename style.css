@@ -771,7 +771,7 @@ body.nav-active .nav__list-item:nth-child(10) {
     height: 100vh;
     width: 100%;
     position: relative;
-    background: url("images/home-img.jpg");
+    background: url("images/home-img.png");
     background-size:cover;
     background-attachment: fixed;
   }
