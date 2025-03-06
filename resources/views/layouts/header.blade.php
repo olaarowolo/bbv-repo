@@ -27,17 +27,17 @@
                                     <li class="dropdown">
                                         <a href="#">Services</a>
                                         <ul>
-                                            <li><a href="#">Trainings</a></li>
+                                            <li><a href="{{ route('trainings') }}">Trainings</a></li>
                                             <li><a href="{{ route('makeup') }}">Make Up</a></li>
-                                            <li><a href="#">Brows</a></li>
-                                            <li><a href="#">Brow Touch Up</a></li>
-                                            <li><a href="#">Eye Lashes</a></li>
-                                            <li><a href="#">Hair Shop</a></li>
+                                            <li><a href="{{ route(name: 'brows') }}">Brows</a></li>
+                                            <li><a href="{{ route('brows') }}">Brow Touch Up</a></li>
+                                            <li><a href="{{ route('eyelashes') }}">Eye Lashes</a></li>
+                                            <li><a href="{{ route('hair') }}">Hair Shop</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Policy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="{{ route('reviews')}}">Reviews</a></li>
+                                    <li><a href="{{ route('policy')}}">Policy</a></li>
+                                    <li><a href="{{ route('contact')}}">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
