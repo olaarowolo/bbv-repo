@@ -764,20 +764,6 @@ body.nav-active .nav__list-item:nth-child(10) {
   font-size: 17px;
 }
 
-
-@media screen and (max-width: 1024px)
-{
-  .homepage {
-    height: 35vh;
-    /* width: 100%; */
-    background: url("images/home-img.png");
-    background-size:cover;
-    background-attachment: fixed;
-  
-  }
-  
-}
-
 .content a {
   color: #000;
   display: block;
