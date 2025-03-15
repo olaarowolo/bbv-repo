@@ -30,7 +30,7 @@ document.getElementById('bookNowButton8').addEventListener('click', function (ev
 
 document.getElementById('bookNowButton10').addEventListener('click', function (event) {
     event.preventDefault();
-    bookingUrl = 'https://calendly.com/beautybyvickky/combination-brows-touch-up-10-week';
+    bookingUrl = 'https://calendly.com/beautybyvickky/combination-brows-touch-up-10-weeks';
     showModal();
 });
 
@@ -81,7 +81,7 @@ document.getElementById('MicrobladingbookNowButton8').addEventListener('click', 
 });
 document.getElementById('MicrobladingbookNowButton10').addEventListener('click', function (event) {
     event.preventDefault();
-    bookingUrl = 'https://calendly.com/beautybyvickky/microblading-touch-up-10-weeks';
+    bookingUrl = 'https://calendly.com/beautybyvickky/combination-brows-touch-up-10-weeks';
     showModal();
 });
 
